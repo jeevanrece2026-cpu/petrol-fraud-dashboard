@@ -1,0 +1,13 @@
+{
+  "background_color": "#0f172a",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "PetroGaurd",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "PetroGaurd",
+  "start_url": "/",
+  "theme_color": "#1e293b",
+  "id": "/",
+  "description": "Real-time fuel anti-theft and telemeter"
+}
