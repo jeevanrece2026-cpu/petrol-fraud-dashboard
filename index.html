@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PetroGuard IoT - Smart Fuel & Anti-Theft Telemetry Dashboard</title>
-  
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#1e293b">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Chart.js CDN -->
@@ -1273,5 +1274,12 @@
       fetchFirebaseData();
     }
   </script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/pwabuilder-sw.js')
+      .then(reg => console.log('Service Worker registered! Scope:', reg.scope))
+      .catch(err => console.error('Service Worker registration failed:', err));
+  }
+</script>
 </body>
 </html>
