@@ -1,39 +1,37 @@
 {
-  "name": "PetrolGuard IoT",
-  "short_name": "PetrolGuard",
-  "id": "./",
-  "start_url": "./",
+  "name": "Petrol Fraud Dashboard",
+  "short_name": "PetrolFraud",
+  "description": "A dashboard to monitor and track petrol fraud cases and reports.",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#1e293b",
-  "description": "Real-time fuel anti-theft and telemetry monitoring system",
+  "background_color": "#ffffff",
+  "theme_color": "#2196F3",
+  "orientation": "any",
+  "categories": ["utilities", "business", "productivity"],
+  "prefer_related_applications": false,
+  "related_applications": [],
   "icons": [
     {
-      "src": "./icons/icon-192x192.png",
+      "src": "icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
-      "src": "./icons/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./icons/icon-maskable-512x512.png",
+      "src": "icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-  "share_target": {
-    "action": "./",
-    "method": "GET",
-    "params": {
-      "title": "title",
-      "text": "text",
-      "url": "url"
+  "shortcuts": [
+    {
+      "name": "Dashboard Home",
+      "short_name": "Home",
+      "description": "Go straight to the main dashboard",
+      "url": "/",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
     }
-  }
+  ]
 }
